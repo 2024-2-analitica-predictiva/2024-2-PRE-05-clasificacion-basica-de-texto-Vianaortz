@@ -1,5 +1,7 @@
 """Autograding script."""
 
+"""Autograding script."""
+
 import pickle
 
 import pandas as pd  # type: ignore
@@ -15,7 +17,7 @@ def test_01():
         compression="zip",
     )
 
-    with open("homework/clf.pickle", "rb") as file:
+    with open("homework/clf.pkl", "rb") as file:
         clf = pickle.load(file)
 
     with open("homework/vectorizer.pkl", "rb") as file:
